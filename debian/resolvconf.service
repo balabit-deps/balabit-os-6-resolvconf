@@ -2,7 +2,8 @@
 Description=Nameserver information manager
 Documentation=man:resolvconf(8)
 DefaultDependencies=no
-Before=networking.service
+Before=network-pre.target
+Wants=network-pre.target
 
 [Service]
 RemainAfterExit=yes

@@ -1,3 +1,25 @@
+resolvconf (1.78ubuntu6) xenial; urgency=medium
+
+  * Read and apply dns information written by initramfs if
+    using rooturl (root=http* on the command line) (LP: #1735225)
+
+ -- Scott Moser <smoser@ubuntu.com>  Wed, 29 Nov 2017 13:26:46 -0500
+
+resolvconf (1.78ubuntu5) xenial; urgency=medium
+
+  * support reading dns information written by initramfs. (LP: #1711760)
+
+ -- Scott Moser <smoser@ubuntu.com>  Mon, 23 Oct 2017 12:44:53 -0400
+
+resolvconf (1.78ubuntu4) xenial; urgency=medium
+
+  * debian/resolvconf.service: resolvconf service must run before any of the
+    possible network configuration services (ifupdown, networkd,
+    NetworkManager) so use network-pre.target instead of service names.
+    (LP: #1649931)
+
+ -- Ryan Harper <ryan.harper@canonical.com>  Wed, 07 Dec 2016 03:03:18 -0600
+
 resolvconf (1.78ubuntu2) xenial; urgency=medium
 
   [ Thomas Hood ]
