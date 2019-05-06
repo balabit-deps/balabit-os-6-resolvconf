@@ -1,3 +1,10 @@
+resolvconf (1.78ubuntu7) xenial; urgency=medium
+
+  * bin/resolvconf: use flock so resolvconf can be called in parallel
+    safely (LP: #1825194).
+
+ -- Alfonso Sanchez-Beato (email Canonical) <alfonso.sanchez-beato@canonical.com>  Mon, 06 May 2019 10:39:40 +0200
+
 resolvconf (1.78ubuntu6) xenial; urgency=medium
 
   * Read and apply dns information written by initramfs if
